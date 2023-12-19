@@ -23,8 +23,10 @@ class LoginPage extends StatelessWidget {
               Text(
                 "Login",
                 style: TextStyle(
-                    color: const Color.fromARGB(255, 226, 32, 18),
-                    fontSize: 36),
+                  color: const Color.fromARGB(255, 226, 32, 18),
+                  fontSize: 36,
+                  fontWeight: FontWeight.w900,
+                ),
               ),
               SizedBox(
                 height: 50,
@@ -45,7 +47,7 @@ class LoginPage extends StatelessWidget {
                     labelText: 'Email',
                     border: OutlineInputBorder(
                       borderRadius:
-                          BorderRadius.circular(10.0), // กำหนดความโค้งของขอบ
+                          BorderRadius.circular(15.0), // กำหนดความโค้งของขอบ
                     ),
                     prefixIcon: Icon(Icons.email),
                   ),
@@ -62,7 +64,7 @@ class LoginPage extends StatelessWidget {
                     labelText: 'Password',
                     border: OutlineInputBorder(
                       borderRadius:
-                          BorderRadius.circular(10.0), // กำหนดความโค้งของขอบ
+                          BorderRadius.circular(15.0), // กำหนดความโค้งของขอบ
                     ),
                     prefixIcon: Icon(Icons.lock),
                   ),

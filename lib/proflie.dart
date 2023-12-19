@@ -17,7 +17,7 @@ class ProfileScreen extends StatelessWidget {
         title: Text('My Profile'),
       ),
       body: Padding(
-        padding: const EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(18.0),
         child: ProfileCard(),
       ),
     );
@@ -48,7 +48,7 @@ class ProfileCard extends StatelessWidget {
               'Nakarin Phaisila',
               style: TextStyle(
                 fontSize: 24.0,
-                fontWeight: FontWeight.bold,
+                fontWeight: FontWeight.w900,
               ),
             ),
             SizedBox(height: 8.0),
@@ -56,7 +56,8 @@ class ProfileCard extends StatelessWidget {
               'MILLUKI',
               style: TextStyle(
                 fontSize: 16.0,
-                color: Colors.grey,
+                color: Colors.black,
+                fontWeight: FontWeight.w700,
               ),
             ),
             SizedBox(height: 16.0),
