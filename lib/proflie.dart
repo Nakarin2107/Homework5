@@ -1,6 +1,10 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:homework5/darwer.dart';
+import 'package:homework5/login.dart';
+import 'package:homework5/my_home_page.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
@@ -8,6 +12,7 @@ class ProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: MyDrawer(),
       appBar: AppBar(
         title: Text('My Profile'),
       ),
@@ -74,8 +79,13 @@ class ProfileCard extends StatelessWidget {
             SizedBox(height: 16.0),
             ElevatedButton(
               onPressed: () {
-                // Navigate back to the home screen
-                Navigator.pop(context);
+                Get.to(() => LoginPage());
+              },
+              child: Text('Back to Login'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Get.to(() => MyHomePage());
               },
               child: Text('Back to Home'),
             ),
