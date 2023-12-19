@@ -31,9 +31,10 @@ class LoginPage extends StatelessWidget {
               SizedBox(
                 height: 50,
               ),
-              Image.network(
-                "https://i.pinimg.com/236x/4a/dd/e8/4adde8d143fb187f29b080293e90ad56.jpg",
-                width: 100,
+              Image.asset(
+                "images/007.png",
+                width: 400,
+                height: 150,
               ),
               SizedBox(
                 height: 50,
